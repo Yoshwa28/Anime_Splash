@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/btn_pausa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/audio" />
+
+        <ImageView
+            android:id="@+id/btn_iniciar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/noaudio"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="285dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="25dp"
+                android:alpha=".75"
+                android:src="@drawable/shonen" />
+
+            <Button
+                android:id="@+id/btn_shonen"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#48000000"
+                android:text="Shonen"
+                android:textColor="#ffff"
+                app:cornerRadius="30dp" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="25dp"
+                android:alpha=".75"
+                android:src="@drawable/seinen" />
+
+            <Button
+                android:id="@+id/btn_seinen"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#48000000"
+                android:text="Seinen"
+                android:textColor="#ffff"
+                app:cornerRadius="30dp" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="25dp"
+                android:alpha=".75"
+                android:src="@drawable/josei" />
+
+            <Button
+                android:id="@+id/btn_josei"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#48000000"
+                android:text="Josei"
+                android:textColor="#ffff"
+                app:cornerRadius="30dp" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="25dp"
+                android:alpha=".75"
+                android:src="@drawable/mecha" />
+
+            <Button
+                android:id="@+id/btn_mecha"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#48000000"
+                android:text="Mecha"
+                android:textColor="#ffff"
+                app:cornerRadius="30dp" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="25dp"
+                android:alpha=".75"
+                android:src="@drawable/kodomo" />
+
+            <Button
+                android:id="@+id/btn_kodomo"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#48000000"
+                android:text="Kodomo"
+                android:textColor="#ffff"
+                app:cornerRadius="30dp" />
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="25dp"
+                android:alpha=".75"
+                android:src="@drawable/sponkon" />
+
+            <Button
+                android:id="@+id/btn_sponkon"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="#48000000"
+                android:text="Sponkon"
+                android:textColor="#ffff"
+                app:cornerRadius="30dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
